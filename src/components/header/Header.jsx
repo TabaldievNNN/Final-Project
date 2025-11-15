@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header>
-      <Link to="/">🍎 Apple Store</Link>
+      <Link to="/"> Apple Store</Link>
       
       <Link to="/">Главная</Link>
       <Link to="/catalog">Каталог</Link>

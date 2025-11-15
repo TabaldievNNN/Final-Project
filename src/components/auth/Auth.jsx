@@ -56,7 +56,7 @@ const Auth = () => {
 
     try {
       if (isLogin) {
-        // Логика входа
+        
         const response = await fetch('https://68f8defcdeff18f212b7d968.mockapi.io/api/v1/users');
         const users = await response.json();
         
@@ -64,7 +64,7 @@ const Auth = () => {
         
         if (user) {
           localStorage.setItem('user', JSON.stringify(user));
-          // Отправляем уведомление о входе
+          
           sendTelegramNotification(user, 'login');
           navigate('/');
           alert(`Добро пожаловать, ${user.name || user.email}!`);
@@ -72,7 +72,7 @@ const Auth = () => {
           throw new Error('Неверный email или пароль');
         }
       } else {
-        // Логика регистрации
+        
         const newUser = {
           email: formData.email,
           password: formData.password,

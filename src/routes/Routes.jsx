@@ -5,7 +5,6 @@ import Cart from '../pages/cart/Cart';
 import ProductDet from '../pages/productdet/ProductDet';
 import { Route, Routes } from 'react-router-dom';
 import  Ecosis  from '../pages/ecosystem/Ecosis';
-import Auth from '../components/Auth/Auth';
 
 
 const AppRoutes = () => {
@@ -16,7 +15,6 @@ const AppRoutes = () => {
       <Route path="/ecosystem" element={<Ecosis/>} />
       <Route path="/cart" element={<Cart/>} />
       <Route path="/product/:id" element={<ProductDet/>} />
-      <Route path='/auth' element={<Auth/>}/>
     </Routes>
   );
 };
